@@ -6,6 +6,6 @@ describe "Static pages" do
 
   describe "Home page" do
     before { visit root_path }
-    it { should have_content('SampleApp3') }
+    it { expect(page).to have_content('SampleApp3') }
   end
 end
